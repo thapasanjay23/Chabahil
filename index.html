@@ -68,9 +68,9 @@
         }
 
         const { data, error } = await supabaseClient
-            .from('licenses')
-            .select('"License Number", "License Holder Name", "Box Code", "License Office"')
-            .eq('License Number', formattedInput)
+            .from('tblLicenseRecords')
+            .select('"license_no", "name"')
+            .eq('license_no', formattedInput)
             .maybeSingle();
 
         resDiv.style.display = 'block';
