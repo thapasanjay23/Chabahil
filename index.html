@@ -33,7 +33,7 @@
 <body>
 
 <div class="card">
-    <h2>तपाईंको लाइसेन्स खोजी</h2>
+    <h2> वितरणका लागि तयारी अवस्थामा रहेको लाइसेन्स खोजी</h2>
     
     <input type="text" id="licenseInput" placeholder="लाइसेन्स नम्बर (उदा: 01-06-...)">
     <div id="emptyError">कृपया लाइसेन्स नम्बर भर्नुहोस् !</div>
@@ -78,7 +78,7 @@
         if (data) {
             resDiv.innerHTML = `
                 <div class="res-item">
-                    <div class="res-label">धारकको नाम:</div>
+                    <div class="res-label">नाम:</div>
                     <div class="res-value">${data["name"]}</div>
                 </div>
                 <div class="res-item">
