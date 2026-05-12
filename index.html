@@ -88,8 +88,11 @@
                     <div class="res-label">लाइसेन्स नम्बर:</div>
                     <div class="res-value">${data["license_no"]}</div>
                 </div>
-                resDiv.innerHTML = `<p class="res-value">लाईसेन्स प्रिन्ट भईसकेको छ। चावहिल यातायात </p>`;
-            resDiv.style.borderLeftColor = "#d32f2f";
+                <div class="res-item" style="margin-top: 15px; background: #ffebee; padding: 10px; border-radius: 4px;">
+            <p class="res-value" style="color: #d32f2f; font-weight: bold; margin: 0;">
+                लाइसेन्स प्रिन्ट भइसकेको छ। चावहिल यातायात
+            </p>
+        </div>
                `;
             resDiv.style.borderLeftColor = "#1b5e20";
         } else {
