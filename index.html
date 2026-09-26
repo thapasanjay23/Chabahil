@@ -72,7 +72,7 @@
 
         const { data, error } = await supabaseClient
             .from('tblLicenseRecords')
-            .select('"license_no", "name","license_category"')
+            .select('"license_no", "name"')
             .eq('license_no', formattedInput)
             .maybeSingle();
 
@@ -87,12 +87,13 @@
                 <div class="res-item">
                     <div class="res-label">लाइसेन्स नम्बर:</div>
                     <div class="res-value">${data["license_no"]}</div>
+                    <p>License Printed!! Visit TMO Chabahil to Collect</p>
                 </div
-                <div class="res-item">
+               <--! <div class="res-item">
                     <div class="res-label">सवारी श्रेणी:</div>
                     <div class="res-value">${data["license_category"] ?? '-'}</div>
                     <p>License Printed!! Visit TMO Chabahil to Collect</p>
-                </div>
+                </div>-->
                 
                `;
             resDiv.style.borderLeftColor = "#1b5e20";
